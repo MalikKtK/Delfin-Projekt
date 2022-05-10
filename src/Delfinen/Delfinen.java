@@ -6,7 +6,9 @@ public class Delfinen {
 
     void go() {
         ui.welcome();
+        ui.ExitMessage();
     }
+
 
 
 
