@@ -8,6 +8,7 @@ public class Main {
         new Main().swimmingClub.go();
     }
 
+
     //TODO 1. Oprette en Arrayliste så der kan tilføjes og printes alle indrigistrede medlemmer
     //TOTO 2.
 
