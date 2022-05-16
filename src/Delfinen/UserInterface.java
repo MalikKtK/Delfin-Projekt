@@ -70,6 +70,7 @@ public class UserInterface {
                 Press [e] overview of members who are in arrears
                 Press [f] view of subscription payments
                 Press [e] to exit program
+                
                 """); }
 
 

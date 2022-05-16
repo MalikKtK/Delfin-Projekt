@@ -10,16 +10,15 @@ public class Delfinen {
     void go() {
         ui.welcomeMessage();
         ui.listOfCommands();
-        while (keepGoing){
+        while (keepGoing) {
             String choice = ui.choice();
-            switch (choice){
+            switch (choice) {
                 case "a" -> list.addMemberToList(ui.addMember());
                 //case "b" -> System.out.println(List.memberList();
 
+                }
             }
+            System.out.println(list);
+            ui.exitMessage();
         }
-        System.out.println(list);
-        ui.exitMessage();
-    }
-
-}
+    }}
