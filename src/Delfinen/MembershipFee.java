@@ -15,7 +15,19 @@ Kassereren har desuden ønsket, at systemet kan vise en oversigt over medlemmer,
 import java.util.Scanner;
 
 public class MembershipFee{
-    private String group[] = {"Junior","Senior", "Elderly", "Passive"};
-    private int fee[] = {500, 1000, 1200 ,1600};
-    private Scanner scan = new Scanner(System.in);
+    private final String[] group = {"Junior","Senior", "Elderly", "Passive"};
+    private final int[] fee = {500, 1000, 1200 ,1600};
+    private final Scanner scan = new Scanner(System.in);
+    private final boolean paid = true;
+    private Member mb;
+
+    public String kontiguineretBetaling(){
+        int kontiguineret = 0;
+        if (mb.getAge() < 18) {
+            kontiguineret = 1000;
+            return group[0];
+        }
+
+        return null;
+    }
 }
