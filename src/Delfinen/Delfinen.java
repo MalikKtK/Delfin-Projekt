@@ -14,8 +14,11 @@ public class Delfinen {
             String choice = ui.choice();
             switch (choice) {
                 case "a" -> list.addMemberToList(ui.addMember());
-                //case "b" -> System.out.println(List.memberList();
-
+                case "b" -> list.deleteMember();
+                case "c" -> list.membersInList();
+                case "e" -> {
+                    ui.exitMessage();
+                    keepGoing = false;
                 }
             }
             System.out.println(list);
