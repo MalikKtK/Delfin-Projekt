@@ -1,5 +1,8 @@
 package Delfinen;
 
+import java.util.Locale;
+import java.util.Scanner;
+
 public class UserInterface {
 
 
@@ -35,6 +38,14 @@ public class UserInterface {
                     }
                     return member;
         }
+    }
+    public CompetitiveMember addCompetitiveMember(String name, int age){
+        System.out.print("Enter swimming activity");
+        String activityChoice = in.next().toLowerCase(Locale.ROOT);
+        return new CompetitiveMember(name,age,activityChoice,true);
+    }
+    public ExerciseMember addExerciseMember(String name, int age){
+        return new ExerciseMember(name,age,true);
     }
 
 

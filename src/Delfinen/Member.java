@@ -3,6 +3,8 @@ package Delfinen;
 import java.util.ArrayList;
 
 abstract public class Member {
+
+    private static int memberCount;
     private String name;
     private int age;
     private boolean juniorSwimmer;
@@ -12,27 +14,14 @@ abstract public class Member {
     private String activeOrPassive;
 
     Member(String name, int age, boolean feePaid){
+        memberCount++;
         this.name = name;
         this.age = age;
         this.activeOrPassive = activeOrPassive;
         juniorOrSeniorSwimmer();
         this.feePaid = feePaid;
     }
-    public void juniorOrSeniorSwimmer(){
-        if (this.age < 18){
-            this.juniorSwimmer = true;
-            this.seniorSwimmer = false;
-            this.elderlySwimmer = false;
-        } else if (this.age >= 60) {
-            this.juniorSwimmer = false;
-            this.seniorSwimmer = false;
-            this.elderlySwimmer = true;
-        } else {
-            this.juniorSwimmer = false;
-            this.seniorSwimmer = true;
-            this.elderlySwimmer = false;
-        }
-    }
+
 
     public String getName() {
         return name;

@@ -5,6 +5,8 @@ import java.util.ArrayList;
 public class Delfinen {
 
     private UserInterface ui = new UserInterface();
+    private boolean keepGoing = true;
+    private List list = new List();
 
 
     void go() {
@@ -18,12 +20,8 @@ public class Delfinen {
 
             }
         }
+        System.out.println(list);
         ui.exitMessage();
     }
 
-
-
-
 }
-
-
