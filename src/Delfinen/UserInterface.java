@@ -39,8 +39,16 @@ public class UserInterface {
                     return member;
         }
     }
+
+
     public CompetitiveMember addCompetitiveMember(String name, int age){
-        System.out.print("Enter swimming activity");
+        System.out.print("""
+                   Enter swimming activity
+                   Butterfly
+                   Crawl
+                   Backstrokes+
+                   Breaststroke""");
+
         String activityChoice = in.next().toLowerCase(Locale.ROOT);
         return new CompetitiveMember(name,age,activityChoice,true);
     }
@@ -59,17 +67,14 @@ public class UserInterface {
     void listOfCommands(){
         System.out.println("""
                 Press [a] to add a new member
-                press [b] to view list of active members
-                Press [c] to view list of passive members
-                Press [d] overview of members who are in arrears 
-                Press [e] for list of 
+                press [b] to delete a member
+                press [c] to view list of active members
+                Press [] to view list of passive members
+                Press [] overview of members who are in arrears
+                Press [] view of subscription payments
                 """); }
 
-  /*  void displayMembers(Member allMembers) {
-        System.out.println(allMembers.());
-    }
 
-     */
 
 
 

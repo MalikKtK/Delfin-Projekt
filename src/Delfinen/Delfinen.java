@@ -1,7 +1,5 @@
 package Delfinen;
 
-import java.util.ArrayList;
-
 public class Delfinen {
 
     private UserInterface ui = new UserInterface();

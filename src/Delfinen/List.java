@@ -14,7 +14,6 @@ Kassereren har desuden ønsket, at systemet kan vise en oversigt over medlemmer,
 //Active over 60 = 25% discond == 1200 kr. yearly.
 //Passive = 500 kr. yearly.
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class List {
@@ -25,7 +24,26 @@ public class List {
         memberList.add(member);
     }
 
+    public ArrayList<Member> getMemberList() {
+        return memberList;
+    }
+    public void deleteMember() {
+        System.out.print("Type name of member you want to delete from list ");
+        String DeleteMember = sc.nextLine();
+      for (int i = 0; i < memberList.size(); i++) {
+          memberList.remove(i);
+        }
+        System.out.println("Deleted " + DeleteMember);
+    }
+
+    public void membersInList() {
+        for (int i = 0; i < memberList.size(); i++) {
+            System.out.println(memberList.get(i));
+        }}
+
+
 }
+
 
 
 
