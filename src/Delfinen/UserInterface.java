@@ -58,24 +58,19 @@ public class UserInterface {
 
 
     void welcomeMessage(){
-        System.out.println("Welcome to Svømmeklubben Delfinen\n" +
-                "\n ");
+        System.out.println("Welcome to Svømmeklubben Delfinen");
     }
-
-    // Register age, desiredFormOfActivity, juniorOrSeniorSwimmer, exerciserOrCompetitiveSwimmer
 
     void listOfCommands(){
         System.out.println("""
                 Press [a] to add a new member
                 press [b] to delete a member
                 press [c] to view list of active members
-                Press [] to view list of passive members
-                Press [] overview of members who are in arrears
-                Press [] view of subscription payments
+                Press [d] to view list of passive members
+                Press [e] overview of members who are in arrears
+                Press [f] view of subscription payments
+                Press [e] to exit program
                 """); }
-
-
-
 
 
     void exitMessage(){
