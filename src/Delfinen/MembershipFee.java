@@ -27,6 +27,14 @@ public class MembershipFee{
             kontiguineret = 1000;
             return group[0];
         }
+        else if (mb.getAge() >= 18) {
+            kontiguineret = 1600;
+            return group[1];
+        }
+        if (mb.getAge() > 60) {
+            kontiguineret = 1200;
+            return group[2];
+        }
 
         return null;
     }
