@@ -11,8 +11,11 @@ Kassereren har desuden ønsket, at systemet kan vise en oversigt over medlemmer,
 //Active over 60 = 25% discond == 1200 kr. yearly.
 //Passive = 500 kr. yearly.
 
-public class MembershipFee {
 
-sjkgKAGHLÆjlch cOgco GHLKU g
+import java.util.Scanner;
 
+public class MembershipFee{
+    private String group[] = {"Junior","Senior", "Elderly", "Passive"};
+    private int fee[] = {500, 1000, 1200 ,1600};
+    private Scanner scan = new Scanner(System.in);
 }
