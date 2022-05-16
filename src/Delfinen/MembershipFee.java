@@ -13,6 +13,6 @@ Kassereren har desuden ønsket, at systemet kan vise en oversigt over medlemmer,
 
 public class MembershipFee {
 
-
+sjkgKAGHLÆjlch cOgco GHLKU g
 
 }
