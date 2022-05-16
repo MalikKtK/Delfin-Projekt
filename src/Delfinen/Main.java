@@ -9,8 +9,9 @@ public class Main {
     }
 
 
-    //TODO 1. Oprette en Arrayliste så der kan tilføjes og printes alle indrigistrede medlemmer
-    //TODO 2. Enum for active or passive?
+   //TODO Opret klasse for formand og en for kasseren
+    //TODO Rykke koden over i de to klasser og fordele hvem der står for hvad
+    //TODO
 
 
 }
