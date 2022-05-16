@@ -20,7 +20,6 @@ public class MembershipFee{
     private final Scanner scan = new Scanner(System.in);
     private final boolean paid = true;
     private Member mb;
-
     public String kontiguineretBetaling(){
         int kontiguineret = 0;
         if (mb.getAge() < 18) {
