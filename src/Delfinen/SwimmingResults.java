@@ -12,6 +12,7 @@ public class SwimmingResults {
     Discipline c = Discipline.backstrokes;
     Discipline d = Discipline.breaststroke;
 
+
     //sout a.butterfly
 
 

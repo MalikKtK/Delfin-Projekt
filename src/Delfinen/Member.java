@@ -1,5 +1,7 @@
 package Delfinen;
 
+import java.util.ArrayList;
+
 abstract public class Member {
     private String name;
     private int age;
@@ -54,7 +56,19 @@ abstract public class Member {
     public boolean getExerciserOrCompetitiveSwimmer(boolean exerciserOrCompetitiveSwimmer){
         return exerciserOrCompetitiveSwimmer;
     }
-
-
-
+    public void juniorOrSeniorSwimmer(){
+        if (this.age < 18){
+            this.juniorSwimmer = true;
+            this.seniorSwimmer = false;
+            this.elderlySwimmer = false;
+        } else if (this.age >= 60) {
+            this.juniorSwimmer = false;
+            this.seniorSwimmer = false;
+            this.elderlySwimmer = true;
+        } else {
+            this.juniorSwimmer = false;
+            this.seniorSwimmer = true;
+            this.elderlySwimmer = false;
+        }
+    }
 }

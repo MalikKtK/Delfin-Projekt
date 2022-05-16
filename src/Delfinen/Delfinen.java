@@ -1,5 +1,7 @@
 package Delfinen;
 
+import java.util.ArrayList;
+
 public class Delfinen {
 
     private UserInterface ui = new UserInterface();
@@ -7,10 +9,13 @@ public class Delfinen {
 
     void go() {
         ui.welcomeMessage();
+        ui.listOfCommands();
         while (keepGoing){
             String choice = ui.choice();
             switch (choice){
-                case "add" -> list.addMemberToList(ui.addMember());
+                case "a" -> list.addMemberToList(ui.addMember());
+                //case "b" -> System.out.println(List.memberList();
+
             }
         }
         ui.exitMessage();

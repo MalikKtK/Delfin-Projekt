@@ -10,6 +10,7 @@ public class Main {
 
 
     //TODO 1. Oprette en Arrayliste så der kan tilføjes og printes alle indrigistrede medlemmer
-    //TOTO 2.
+    //TODO 2. Enum for active or passive?
+
 
 }

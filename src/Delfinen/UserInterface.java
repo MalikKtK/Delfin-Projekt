@@ -2,6 +2,7 @@ package Delfinen;
 
 public class UserInterface {
 
+
     private Scanner in = new Scanner(System.in);
 
     public String choice(){
@@ -14,13 +15,12 @@ public class UserInterface {
 
         System.out.print("Enter age: ");
         int age = in.nextInt();
-
-        System.out.print("Passive or active member? (p/a)");
+        System.out.print("Active or passive member? [a]ctive or [p]assive");
         String pOrA = in.next().toLowerCase(Locale.ROOT);
         if (pOrA.equals("p")){
             return new PassiveMember(name,age,true);
         } else {
-            System.out.print("Competitive or exercise swimmer? (c or e): ");
+            System.out.print("Competitive or exercise swimmer? [c]ompetitive or [e]xercise swimmer: ");
                     String cOrE = in.next().toLowerCase(Locale.ROOT);
                     boolean trueForCompetitiveFalseForExercise = false;
                     switch (cOrE) {
@@ -41,18 +41,24 @@ public class UserInterface {
     void welcomeMessage(){
         System.out.println("Welcome to Svømmeklubben Delfinen\n" +
                 "\n ");
-        listOfCommands();
     }
 
     // Register age, desiredFormOfActivity, juniorOrSeniorSwimmer, exerciserOrCompetitiveSwimmer
 
     void listOfCommands(){
         System.out.println("""
-                Press a to view list of active members
-                Press b to view list of passive members
-                Press c overview of members who are in arrears 
-                Press d for list of 
+                Press [a] to add a new member
+                press [b] to view list of active members
+                Press [c] to view list of passive members
+                Press [d] overview of members who are in arrears 
+                Press [e] for list of 
                 """); }
+
+  /*  void displayMembers(Member allMembers) {
+        System.out.println(allMembers.());
+    }
+
+     */
 
 
 
