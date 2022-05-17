@@ -35,10 +35,6 @@ abstract public class Member {
         return age;
     }
 
-    public void setAge(int age){
-        this.age = age;
-    }
-
 
     //getters/setters for aktiv/passiv, motion/konk
 
@@ -59,5 +55,37 @@ abstract public class Member {
             this.seniorSwimmer = true;
             this.elderlySwimmer = false;
         }
+    }
+
+    public int calculateFee(){
+        if (juniorSwimmer){
+            return 1000;
+        } else if (seniorSwimmer){
+            return 1600;
+        } else if (elderlySwimmer){
+            return 1200;
+        }else {
+            return 500;
+        }
+    }
+
+    public int getFee() {
+        return fee;
+    }
+
+    @Override
+    public String toString() {
+        String MemberType = "";
+        if (getAge() < 18) {
+            MemberType = "Junior Member";
+        } else if (getAge() >= 18) {
+            MemberType = "Senior Member";
+        }
+        return "\n Name: " + getName() +
+                "\n Age: " + getAge() +
+                "\n Membertype: " + MemberType +
+                "\n Activityform: " + activeOrPassive +
+                "\n Fees Paid: " + feePaid +
+                " ";
     }
 }

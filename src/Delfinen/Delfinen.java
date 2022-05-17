@@ -21,7 +21,5 @@ public class Delfinen {
                     keepGoing = false;
                 }
             }
-            System.out.println(list);
-            ui.exitMessage();
         }
     }}
