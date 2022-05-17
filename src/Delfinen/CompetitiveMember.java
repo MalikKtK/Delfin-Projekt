@@ -2,7 +2,6 @@ package Delfinen;
 
 public class CompetitiveMember extends Member {
 
-
     private boolean competitive;
     private String desiredFormOfActivity;
     //Constructor matching Super
