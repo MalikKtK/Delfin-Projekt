@@ -17,8 +17,8 @@ Kassereren har desuden ønsket, at systemet kan vise en oversigt over medlemmer,
 import java.util.Scanner;
 
 public class List {
-    private Scanner sc = new Scanner(System.in);
-    private static ArrayList<Member> memberList = new ArrayList();
+
+    static ArrayList<Member> memberList = new ArrayList<>();
 
     public static void addMemberToList(Member member) {
         memberList.add(member);

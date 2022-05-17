@@ -1,17 +1,18 @@
 package Delfinen;
 
-import java.util.ArrayList;
-
-abstract public class Member {
+public class Member {
 
     private static int memberCount;
-    private String name;
-    private int age;
+
+    private final String name;
+    private String activeOrPassive;
+    private final int age;
+    private final int fee;
     private boolean juniorSwimmer;
     private boolean seniorSwimmer;
     private boolean elderlySwimmer;
-    private boolean feePaid = true;
-    private String activeOrPassive;
+    private final boolean feePaid;
+
 
     Member(String name, int age, boolean feePaid){
         memberCount++;
@@ -39,9 +40,6 @@ abstract public class Member {
 
     //getters/setters for aktiv/passiv, motion/konk
 
-    public boolean getExerciserOrCompetitiveSwimmer(boolean exerciserOrCompetitiveSwimmer){
-        return exerciserOrCompetitiveSwimmer;
-    }
     public void juniorOrSeniorSwimmer(){
         if (this.age < 18){
             this.juniorSwimmer = true;
