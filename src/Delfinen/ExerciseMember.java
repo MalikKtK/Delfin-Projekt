@@ -9,4 +9,5 @@ public class ExerciseMember extends Member {
         super(name, age, feePaid);
         this.exerciseSwimmer = true;
     }
+
 }

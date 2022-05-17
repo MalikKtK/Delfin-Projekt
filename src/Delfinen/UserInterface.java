@@ -8,28 +8,20 @@ public class UserInterface {
 
     private Scanner in = new Scanner(System.in);
 
-    public String choice(){
-        return in.next();
-    }
-
 
 
 
     void welcomeMessage(){
         System.out.println("Welcome to Svømmeklubben Delfinen");
     }
-
-    void listOfCommands(){
-        System.out.println("""
-                Press [a] to add a new member
-                press [b] to delete a member
-                press [c] to view list of active members
-                Press [d] to view list of passive members
-                Press [e] overview of members who are in arrears
-                Press [f] view of subscription payments
-                Press [e] to exit program
-                
-                """); }
+void menu(){
+    System.out.println("Chose one of the funktions: ");
+    System.out.println("1. Create a new Member ");
+    System.out.println("2. Delete a Member");
+    System.out.println("3. Show all Mmebers from ArrayList: ");
+    System.out.println("4. to view total subscription fees");
+    System.out.println("5. Exit Program ");
+}
 
 
     void exitMessage(){

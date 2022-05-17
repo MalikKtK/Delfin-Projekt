@@ -1,5 +1,7 @@
 package Delfinen;
 
+import java.util.Scanner;
+
 public class Delfinen {
 
     private final UserInterface ui = new UserInterface();
@@ -11,9 +13,10 @@ public class Delfinen {
 
     void go() {
         ui.welcomeMessage();
-        ui.listOfCommands();
+
         while (keepGoing) {
-            String choice = ui.choice();
+            ui.menu();
+            int choice = in.nextInt();
             switch (choice) {
                 case 1 -> chairman.addMember();
                 case 2 -> chairman.deleteMember();
