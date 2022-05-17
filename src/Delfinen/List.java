@@ -20,33 +20,21 @@ public class List {
     private Scanner sc = new Scanner(System.in);
     private static ArrayList<Member> memberList = new ArrayList();
 
-    public void addMemberToList(Member member) {
+    public static void addMemberToList(Member member) {
         memberList.add(member);
     }
 
-    public ArrayList<Member> getMemberList() {
+    public static ArrayList<Member> getMemberList() {
         return memberList;
     }
-    public void deleteMember() {
-        System.out.print("Type name of member you want to delete from list ");
-        String DeleteMember = sc.nextLine();
-      for (int i = 0; i < memberList.size(); i++) {
-          memberList.remove(i);
-        }
-        System.out.println("Deleted " + DeleteMember);
+
+    public static void removeMemberFromList(int i){
+        memberList.remove(i);
     }
 
-    public void membersInList() {
+    public static void membersInList() {
         for (int i = 0; i < memberList.size(); i++) {
             System.out.println(memberList.get(i));
-        }}
-
-
+        }
+    }
 }
-
-
-
-
-
-
-

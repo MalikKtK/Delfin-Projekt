@@ -19,6 +19,7 @@ abstract public class Member {
         this.age = age;
         this.activeOrPassive = activeOrPassive;
         juniorOrSeniorSwimmer();
+        this.fee = calculateFee();
         this.feePaid = feePaid;
     }
 
