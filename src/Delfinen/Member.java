@@ -1,8 +1,11 @@
 package Delfinen;
 
+import java.util.Random;
+
 public class Member {
 
     private static int memberCount;
+    Random random = new Random();
 
     private final String name;
     private String activeOrPassive;
@@ -11,19 +14,27 @@ public class Member {
     private boolean juniorSwimmer;
     private boolean seniorSwimmer;
     private boolean elderlySwimmer;
-    private final boolean feePaid;
+    private boolean inRestance;
 
 
-    Member(String name, int age, boolean feePaid){
+    Member(String name, int age){
         memberCount++;
         this.name = name;
         this.age = age;
         this.activeOrPassive = activeOrPassive;
         juniorOrSeniorSwimmer();
-        this.fee = calculateFee();
-        this.feePaid = feePaid;
+        fee = calculateFee();
+        inRestance = inRestance();
     }
 
+    public boolean inRestance(){
+        int randomNum = random.nextInt(4)+1;
+        return randomNum < 2;
+    }
+
+    public boolean getRestance(){
+        return inRestance;
+    }
 
     public String getName() {
         return name;
@@ -79,8 +90,6 @@ public class Member {
         return "\n Name: " + getName() +
                 "\n Age: " + getAge() +
                 "\n Membertype: " + MemberType +
-                "\n Activityform: " + activeOrPassive +
-                "\n Fees Paid: " + feePaid +
-                " ";
+                "\n Activityform: " + activeOrPassive;
     }
 }

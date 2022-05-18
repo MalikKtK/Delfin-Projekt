@@ -6,7 +6,7 @@ public class ExerciseMember extends Member {
 
     //Constructor matching Super class
     ExerciseMember(String name, int age, boolean feePaid) {
-        super(name, age, feePaid);
+        super(name, age);
         this.exerciseSwimmer = true;
     }
 

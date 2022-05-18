@@ -7,10 +7,10 @@ public class SwimmingResults {
     //    backstrokes,
     //    breaststroke,
 
-    Discipline a = Discipline.butterfly;
-    Discipline b = Discipline.crawl;
-    Discipline c = Discipline.backstrokes;
-    Discipline d = Discipline.breaststroke;
+    Discipline a = Discipline.BUTTERFLY;
+    Discipline b = Discipline.CRAWL;
+    Discipline c = Discipline.BACKSTROKES;
+    Discipline d = Discipline.BREASTSTROKES;
 
 
     //sout a.butterfly

@@ -22,7 +22,7 @@ public class Chairman {
         System.out.print("Active or passive member? [a]ctive or [p]assive");
         String pOrA = in.next().toLowerCase(Locale.ROOT);
         if (pOrA.equals("p")){
-            List.addMemberToList(new PassiveMember(name,age,true));
+            List.addMemberToList(new PassiveMember(name,age));
         } else {
             System.out.print("Competitive or exercise swimmer? [c]ompetitive or [e]xercise swimmer: ");
             String cOrE = in.next().toLowerCase(Locale.ROOT);
@@ -76,7 +76,7 @@ public class Chairman {
                    Breaststroke""");
 
         String activityChoice = in.next().toLowerCase(Locale.ROOT);
-        return new CompetitiveMember(name,age,activityChoice,true);
+        return new CompetitiveMember(name,age,activityChoice);
     }
 
     public ExerciseMember addExerciseMember(String name, int age){
