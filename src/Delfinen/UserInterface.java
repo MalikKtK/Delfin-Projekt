@@ -19,8 +19,9 @@ void menu(){
     System.out.println("1. Create a new Member ");
     System.out.println("2. Delete a Member");
     System.out.println("3. Show all Mmebers from ArrayList: ");
-    System.out.println("4. to view total subscription fees");
-    System.out.println("5. Exit Program ");
+    System.out.println("4. Show all Members from list");
+    System.out.println("5. to view total subscription fees");
+    System.out.println("6. Exit Program ");
 }
 
 

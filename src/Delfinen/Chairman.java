@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Chairman {
 
     Scanner in = new Scanner(System.in);
-
+    private fileManagement file = new fileManagement();
 
     public void displayMembers(){
         List.membersInList();
@@ -34,10 +34,13 @@ public class Chairman {
             Member member;
             if (trueForCompetitiveFalseForExercise){
                 member = addCompetitiveMember(name,age);
+                file.fileOutput(member);
             } else {
                 member = addExerciseMember(name,age);
+                file.fileOutput(member);
             }
             List.addMemberToList(member);
+            file.fileOutput(member);
         }
     }
 
@@ -61,10 +64,6 @@ public class Chairman {
         for (int i = 0; i < List.getMemberList().size(); i++){
             System.out.println(List.memberList.get(i));
         }
-    }
-
-    public void showMembersFromFile(){
-
     }
 
     public CompetitiveMember addCompetitiveMember(String name, int age){
