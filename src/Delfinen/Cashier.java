@@ -2,7 +2,7 @@ package Delfinen;
 
 public class Cashier {
 
-    public void getTotalSubscriptionFees(){
+    public void totalSubscriptionFees(){
         int totalIncome = 0;
         for (int i = 0; i < List.memberList.size(); i++) {
             totalIncome += List.getMemberList().get(i).getFee();

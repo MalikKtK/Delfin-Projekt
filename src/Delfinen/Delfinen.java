@@ -11,7 +11,7 @@ public class Delfinen {
     private final Scanner in = new Scanner(System.in);
     private Cashier cashier = new Cashier();
 
-    void go() {
+    void go() throws FileNotFoundException {
         ui.welcomeMessage();
 
         while (keepGoing) {
@@ -21,8 +21,10 @@ public class Delfinen {
                 case 1 -> chairman.addMember();
                 case 2 -> chairman.deleteMember();
                 case 3 -> chairman.showMembersFromArray();
-                case 4 -> cashier.getTotalSubscriptionFees();
-                case 5 -> {
+                case 4 -> file.showMembersFromFile();
+                case 5 -> cashier.totalSubscriptionFees();
+                case 6 -> cashier.getMembersInRestance();
+                case 7 -> {
                     ui.exitMessage();
                     keepGoing = false;}
                 }

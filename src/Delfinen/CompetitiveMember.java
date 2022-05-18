@@ -1,5 +1,7 @@
 package Delfinen;
 
+import java.util.Scanner;
+
 public class CompetitiveMember extends Member {
 
     //Constructor matching Super
