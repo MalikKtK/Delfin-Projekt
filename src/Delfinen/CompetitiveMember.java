@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class CompetitiveMember extends Member {
 
+    private double træningsResultat;
+
     //Constructor matching Super
     CompetitiveMember(String name, int age, String desiredFormOfActivity) {
         super(name, age);
@@ -22,10 +24,11 @@ public class CompetitiveMember extends Member {
         } else if(choice.equals("brystsvømning")){
             competitiveMember.setSvømmeDiscipliner(Discipline.BREASTSTROKES);
         }
-//        System.out.println("Chosen swimming discipline: " + competitiveMember.getSwimmingDisciplime());
-        // MarkMus laver denne
     }
     public void setSvømmeDiscipliner(Discipline swimmingDiscipline) {
 //        this.swimmingDiscipline = swimmingDiscipline;
+    }
+    public void setTræningsResultat (double træningsResultat) {
+        this.træningsResultat = træningsResultat;
     }
     }

@@ -2,6 +2,7 @@ package Delfinen;
 
 import java.util.ArrayList;
 
+
 public class Teams {
     private ArrayList<CompetitiveMember> juniorSwimmer = new ArrayList<>();
     private ArrayList<CompetitiveMember> seniorSwimmer = new ArrayList<>();
@@ -22,4 +23,6 @@ public class Teams {
     public ArrayList<CompetitiveMember> getSeniorSwimmer(){
         return seniorSwimmer;
     }
+
+
 }

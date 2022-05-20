@@ -12,8 +12,5 @@ public class Main {
     }
 
 
-   //TODO Opret klasse for formand og en for kasseren
-    //TODO Rykke koden over i de to klasser og fordele hvem der står for hvad
-
 
 }

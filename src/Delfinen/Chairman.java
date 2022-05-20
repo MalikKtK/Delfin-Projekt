@@ -42,6 +42,7 @@ public class Chairman {
             List.addMemberToList(member);
             file.fileOutput(member);
         }
+
     }
 
 
@@ -68,11 +69,12 @@ public class Chairman {
 
     public CompetitiveMember addCompetitiveMember(String name, int age){
         System.out.print("""
-                   Enter swimming activity
+                   Enter swimming discipline
                    Butterfly
                    Crawl
                    Backstrokes+
                    Breaststroke""");
+
 
         String activityChoice = in.next().toLowerCase(Locale.ROOT);
         return new CompetitiveMember(name,age,activityChoice);
