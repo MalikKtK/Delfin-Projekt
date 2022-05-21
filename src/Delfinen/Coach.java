@@ -21,6 +21,9 @@ public class Coach {
             }
         }
     }
+    void showTraingingResult(){
+        System.out.println("Test");
+    }
 public void resultSenior(Teams teams){
         Scanner in = new Scanner(System.in);
     System.out.println("Name of swimmer: ");

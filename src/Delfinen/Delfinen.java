@@ -8,6 +8,7 @@ public class Delfinen {
     private final UserInterface ui = new UserInterface();
     private final Chairman chairman = new Chairman();
     private final Coach coach = new Coach();
+    private final Teams teams = new Teams();
     private boolean keepGoing = true;
     private final Scanner in = new Scanner(System.in);
     private Cashier cashier = new Cashier();
@@ -28,7 +29,9 @@ public class Delfinen {
                 case 6 -> cashier.getMembersInRestance();
                 case 7 -> coach.resultJunior(coach.teams);
                 case 8 -> coach.resultSenior(coach.teams);
-                case 9 -> {
+                case 9 -> System.out.println(teams);
+                case 10 -> coach.showTraingingResult();
+                case 11 -> {
                     ui.exitMessage();
                     keepGoing = false;}
                 }

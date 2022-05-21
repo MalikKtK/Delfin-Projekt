@@ -20,17 +20,20 @@ public class  fileManagement extends List{
 public void showMembersFromFile() throws FileNotFoundException {
         Scanner fileReader = new Scanner(allMembers);
         while (fileReader.hasNext())
+            break;
             System.out.println(fileReader.hasNextLine());
     }
+/*
 
-public void saveListOfMembers() throws FileNotFoundException{
+    public void saveListOfMembers() throws FileNotFoundException{
         PrintStream newFile = new PrintStream("members.txt");
-//        for(Member : )
-//            newFile.println(Member);
+         for(String name: mem )
+               newFile.println(name);
+    }
 
-
-   }
+ */
 }
+
 
 
 
