@@ -40,7 +40,6 @@ public class Chairman {
                 file.fileOutput(member);
             }
             List.addMemberToList(member);
-            file.fileOutput(member);
         }
 
     }
