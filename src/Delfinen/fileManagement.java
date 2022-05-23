@@ -17,7 +17,8 @@ public class  fileManagement extends List{
             e.printStackTrace();
         }
     }
-public void showMembersFromFile() throws FileNotFoundException {
+
+    public void showMembersFromFile() throws FileNotFoundException {
         Scanner fileReader = new Scanner(allMembers);
         while (fileReader.hasNext())
             break;

@@ -8,9 +8,9 @@ public class CompetitiveMember extends Member {
     private String swimmingDiscipline;
 
     //Constructor matching Super
-    CompetitiveMember(String name, int age, String desiredFormOfActivity) {
+    CompetitiveMember(String name, int age, String swimmingDiscipline) {
         super(name, age);
-        boolean competitive = true;
+        this.swimmingDiscipline = swimmingDiscipline;
     }
     public void swimmingDiscipline(CompetitiveMember competitiveMember){
         System.out.print("Svømmerens disciplin: ");

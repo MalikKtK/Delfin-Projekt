@@ -84,9 +84,10 @@ public class Member {
         } else if (getAge() >= 18) {
             MemberType = "Senior Member";
         }
-        return "\n Name: " + getName() +
-                "\n Age: " + getAge() +
-                "\n Membertype: " + MemberType +
-                "\n Activityform: " + activeOrPassive;
+        return "-----------------------\n" +
+                "\nName: " + getName() +
+                "\nAge: " + getAge() +
+                "\nMembertype: " + MemberType +
+                "\n-----------------------\n";
     }
 }

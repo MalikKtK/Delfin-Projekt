@@ -6,9 +6,13 @@ public class Coach {
     //Lav timetables for de forskellige competitive svømmere + svømmediscipliner
     //Name from Arraylist of members? if competitive
 
-    Teams teams = new Teams();
+    Team butterfly = new Team();
+    Team crawl = new Team();
+    Team backstrokes = new Team();
+    Team breaststrokes = new Team();
 
-    public void resultJunior(Teams teams){
+
+    public void resultJunior(Team teams){
         Scanner in = new Scanner(System.in);
         System.out.println("Name of swimmer: ");
         String name = in.nextLine();
@@ -24,7 +28,7 @@ public class Coach {
     void showTraingingResult(){
         System.out.println("Test");
     }
-public void resultSenior(Teams teams){
+public void resultSenior(Team teams){
         Scanner in = new Scanner(System.in);
     System.out.println("Name of swimmer: ");
     String name = in.nextLine();
@@ -35,11 +39,6 @@ public void resultSenior(Teams teams){
             teams.getSeniorSwimmer().get(i).setTræningsResultat(time);
             break;
         }
-
     }
 }
-
-
 }
-
-

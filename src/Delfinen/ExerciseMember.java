@@ -2,12 +2,13 @@ package Delfinen;
 
 public class ExerciseMember extends Member {
 
-    private boolean exerciseSwimmer;
-
-    //Constructor matching Super class
-    ExerciseMember(String name, int age, boolean feePaid) {
+    ExerciseMember(String name, int age) {
         super(name, age);
-        this.exerciseSwimmer = true;
     }
 
+    @Override
+    public String toString() {
+        return super.toString() + "\nMembership Status: Active" +
+                                    "\nComp/Exer: Exercise\n";
+    }
 }

@@ -80,6 +80,6 @@ public class Chairman {
     }
 
     public ExerciseMember addExerciseMember(String name, int age){
-        return new ExerciseMember(name,age,true);
+        return new ExerciseMember(name,age);
     }
 }
