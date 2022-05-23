@@ -6,11 +6,7 @@ import java.util.Scanner;
 public class Chairman {
 
     Scanner in = new Scanner(System.in);
-    private fileManagement file = new fileManagement();
-
-    public void displayMembers(){
-        List.membersInList();
-    }
+    private final fileManagement file = new fileManagement();
 
 
     public void addMember() {

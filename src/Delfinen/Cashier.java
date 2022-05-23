@@ -25,8 +25,8 @@ public class Cashier {
             System.out.println("All members has paid for their subscription!");
         } else {
             System.out.println("List of members in restance: ");
-            for (int i = 0; i < names.size(); i++) {
-                System.out.println(names.get(i));
+            for (String s : names) {
+                System.out.println(s);
             }
         }
     }

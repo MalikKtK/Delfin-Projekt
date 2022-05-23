@@ -18,9 +18,4 @@ public class List {
         memberList.remove(i);
     }
 
-    public static void membersInList() {
-        for (int i = 0; i < memberList.size(); i++) {
-            System.out.println(memberList.get(i));
-        }
     }
-}

@@ -32,4 +32,11 @@ public class CompetitiveMember extends Member {
     public void setTræningsResultat (double træningsResultat) {
         this.træningsResultat = træningsResultat;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + "\nMembership status: Active" +
+                "\nComp/Exer: Competitive\n" +
+                "\nDiscipline: " + swimmingDiscipline;
     }
+}

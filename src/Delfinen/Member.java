@@ -4,7 +4,6 @@ import java.util.Random;
 
 public class Member {
 
-    private static int memberCount;
     Random random = new Random();
 
     private final String name;
@@ -13,7 +12,7 @@ public class Member {
     private boolean juniorSwimmer;
     private boolean seniorSwimmer;
     private boolean elderlySwimmer;
-    private boolean inRestance;
+    private final boolean inRestance;
 
 
     Member(String name, int age){

@@ -11,8 +11,8 @@ public class Delfinen {
     private final Team teams = new Team();
     private boolean keepGoing = true;
     private final Scanner in = new Scanner(System.in);
-    private Cashier cashier = new Cashier();
-    private fileManagement file = new fileManagement();
+    private final Cashier cashier = new Cashier();
+    private final fileManagement file = new fileManagement();
 
     void go() throws FileNotFoundException {
         ui.welcomeMessage();
