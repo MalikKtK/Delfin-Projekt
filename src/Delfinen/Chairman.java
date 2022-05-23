@@ -16,13 +16,14 @@ public class Chairman {
     public void addMember() {
         System.out.print("Enter name: ");
         String name = in.next().toLowerCase(Locale.ROOT);
-
+        Member member;
         System.out.print("Enter age: ");
         int age = in.nextInt();
         System.out.print("Active or passive member? [a]ctive or [p]assive");
         String pOrA = in.next().toLowerCase(Locale.ROOT);
         if (pOrA.equals("p")){
-            List.addMemberToList(new PassiveMember(name,age));
+            List.addMemberToList(member = new PassiveMember(name,age));
+            file.fileOutput(member);
         } else {
             System.out.print("Competitive or exercise swimmer? [c]ompetitive or [e]xercise swimmer: ");
             String cOrE = in.next().toLowerCase(Locale.ROOT);
@@ -31,7 +32,7 @@ public class Chairman {
                 case "c" -> trueForCompetitiveFalseForExercise = true;
                 case "e" -> trueForCompetitiveFalseForExercise = false;
             }
-            Member member;
+
             if (trueForCompetitiveFalseForExercise){
                 member = addCompetitiveMember(name,age);
                 file.fileOutput(member);

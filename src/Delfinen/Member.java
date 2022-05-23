@@ -41,9 +41,6 @@ public class Member {
         return age;
     }
 
-
-    //getters/setters for aktiv/passiv, motion/konk
-
     public void juniorOrSeniorSwimmer(){
         if (this.age < 18){
             this.juniorSwimmer = true;
@@ -81,7 +78,7 @@ public class Member {
         String MemberType = "";
         if (getAge() < 18) {
             MemberType = "Junior Member";
-        } else if (getAge() >= 18) {
+        } if (getAge() >= 18) {
             MemberType = "Senior Member";
         }
         return "-----------------------\n" +
