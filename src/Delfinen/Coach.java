@@ -3,8 +3,8 @@ package Delfinen;
 import java.util.Scanner;
 
 public class Coach {
-
-    //Name from Arraylist of members?
+    //Lav timetables for de forskellige competitive svømmere + svømmediscipliner
+    //Name from Arraylist of members? if competitive
 
     Teams teams = new Teams();
 

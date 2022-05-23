@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class CompetitiveMember extends Member {
 
     private double træningsResultat;
+    private String swimmingDiscipline;
 
     //Constructor matching Super
     CompetitiveMember(String name, int age, String desiredFormOfActivity) {
@@ -26,7 +27,7 @@ public class CompetitiveMember extends Member {
         }
     }
     public void setSvømmeDiscipliner(Discipline swimmingDiscipline) {
-//        this.swimmingDiscipline = swimmingDiscipline;
+        this.swimmingDiscipline = String.valueOf(swimmingDiscipline);
     }
     public void setTræningsResultat (double træningsResultat) {
         this.træningsResultat = træningsResultat;

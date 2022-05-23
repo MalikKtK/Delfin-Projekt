@@ -1,15 +1,6 @@
 package Delfinen;
 
-import java.util.Locale;
-import java.util.Scanner;
-
 public class UserInterface {
-
-
-    private Scanner in = new Scanner(System.in);
-
-
-
 
     void welcomeMessage(){
         System.out.println("Welcome to Svømmeklubben Delfinen");

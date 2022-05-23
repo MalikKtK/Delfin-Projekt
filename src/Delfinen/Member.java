@@ -8,7 +8,6 @@ public class Member {
     Random random = new Random();
 
     private final String name;
-    private String activeOrPassive;
     private final int age;
     private final int fee;
     private boolean juniorSwimmer;
@@ -18,10 +17,8 @@ public class Member {
 
 
     Member(String name, int age){
-        memberCount++;
         this.name = name;
         this.age = age;
-        this.activeOrPassive = activeOrPassive;
         juniorOrSeniorSwimmer();
         fee = calculateFee();
         inRestance = inRestance();
