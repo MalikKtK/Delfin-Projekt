@@ -25,12 +25,12 @@ public class Delfinen {
                 case 2 -> chairman.deleteMember();
                 case 3 -> chairman.showMembersFromArray();
                 case 4 -> file.showMembersFromFile();
-                case 5 -> cashier.totalSubscriptionFees();
-                case 6 -> cashier.getMembersInRestance();
-                case 7 -> coach.resultJunior(coach.crawl);
-                case 8 -> coach.resultSenior(coach.crawl);
-                case 9 -> System.out.println(teams);
-                case 10 -> coach.showTraingingResult();
+                case 5 -> file.showMembersFromFile2();
+                case 6 -> cashier.totalSubscriptionFees();
+                case 7 -> cashier.getMembersInRestance();
+                case 8 -> coach.displayTopFive();
+                case 9 -> coach.showTrainingResult();
+                case 10 -> coach.addMemberToTeam();
                 case 11 -> {
                     ui.exitMessage();
                     keepGoing = false;}

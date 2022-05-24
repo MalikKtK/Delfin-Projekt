@@ -3,9 +3,9 @@ package Delfinen;
 import java.util.Scanner;
 
 public class Coach {
-    //Lav timetables for de forskellige competitive svømmere + svømmediscipliner
-    //Name from Arraylist of members? if competitive
-
+    private final fileManagement file = new fileManagement();
+    
+    Scanner in = new Scanner(System.in);
     Team butterfly = new Team();
     Team crawl = new Team();
     Team backstrokes = new Team();
@@ -25,7 +25,29 @@ public class Coach {
             }
         }
     }
-    void showTraingingResult(){
+    */
+    public void addMemberToTeam(){
+        System.out.println("Which member would you like to add to the team?");
+        String name = in.next().toLowerCase(Locale.ROOT);
+        CompetitiveMember member = null;
+        for (int i = 0; i < List.memberList.size(); i++) {
+            if (List.memberList.get(i).getName().equals(name)){
+                file.fileOutput(member);
+                member = (CompetitiveMember) List.memberList.get(i);
+                break;
+            }
+        }
+        if (member != null) {
+            switch (member.getSwimmingDiscipline()){
+                case "crawl" -> crawl.addMemberToTeam(member);
+                case "butterfly" -> butterfly.addMemberToTeam(member);
+                case "backstrokes" -> backstrokes.addMemberToTeam(member);
+                case "breaststrokes" -> breaststrokes.addMemberToTeam(member);
+                default -> System.out.println("That discipline doesnt exits bruh");
+            }
+        }
+    }
+    void showTrainingResult(){
         System.out.println("Test");
     }
 public void resultSenior(Team teams){
