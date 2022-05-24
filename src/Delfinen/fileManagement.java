@@ -8,10 +8,13 @@ public class fileManagement {
     final File topFiveMembers = new File("topFive.txt");
 
     public void fileOutput(Member member) {
+
         try {
             PrintStream output = new PrintStream(new FileOutputStream(allMembers, true));
             output.append(member.toString());
-            System.out.println("Members are now saved in a savefile.");
+            System.out.println("Members are now saved in a save-file.");
+            
+
         } catch (IOException e) {
             System.out.println("Error");
             e.printStackTrace();
