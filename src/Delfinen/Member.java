@@ -28,6 +28,7 @@ public class Member {
         return randomNum < 2;
     }
 
+
     public boolean getRestance(){
         return inRestance;
     }
@@ -54,6 +55,17 @@ public class Member {
             this.seniorSwimmer = true;
             this.elderlySwimmer = false;
         }
+    }
+    public boolean isJuniorSwimmer(){
+        return juniorSwimmer;
+    }
+
+    public boolean isSeniorSwimmer() {
+        return seniorSwimmer;
+    }
+
+    public boolean isElderlySwimmer(){
+        return elderlySwimmer;
     }
 
     public int calculateFee(){

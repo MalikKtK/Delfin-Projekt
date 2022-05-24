@@ -6,7 +6,6 @@ public class UserInterface {
         System.out.println("Welcome to Svømmeklubben Delfinen");
     }
 
-
     void menu(){
         System.out.println("Chose one of the functions:");
         System.out.println("1. Create a new Member");

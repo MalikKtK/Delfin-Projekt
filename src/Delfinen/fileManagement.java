@@ -3,8 +3,9 @@ package Delfinen;
 import java.io.*;
 import java.util.Scanner;
 
-public class fileManagement extends List {
+public class fileManagement {
     final File allMembers = new File("members.txt");
+    final File topFiveMembers = new File("topFive.txt");
 
     public void fileOutput(Member member) {
         try {

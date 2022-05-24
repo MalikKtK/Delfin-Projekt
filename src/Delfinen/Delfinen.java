@@ -8,7 +8,6 @@ public class Delfinen {
     private final UserInterface ui = new UserInterface();
     private final Chairman chairman = new Chairman();
     private final Coach coach = new Coach();
-    private final Team teams = new Team();
     private boolean keepGoing = true;
     private final Scanner in = new Scanner(System.in);
     private final Cashier cashier = new Cashier();

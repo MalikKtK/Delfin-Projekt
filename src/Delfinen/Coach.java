@@ -1,5 +1,7 @@
 package Delfinen;
 
+import java.util.Collections;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Coach {
@@ -11,9 +13,43 @@ public class Coach {
     Team backstrokes = new Team();
     Team breaststrokes = new Team();
 
+    public void displayTopFive(){
+        System.out.println("""
+                What team?\s
+                (1) Butterfly
+                (2) Crawl
+                (3) Backstrokes
+                (4) Breaststrokes""");
+        int team = in.nextInt();
+        switch (team){
+            case 1 -> sortTheTeam(butterfly);
+            case 2 -> sortTheTeam(crawl);
+            case 3 -> sortTheTeam(backstrokes);
+            case 4 -> sortTheTeam(breaststrokes);
+        }
+    }
+    public void sortTheTeam(Team team){
+        Collections.sort(team.getSeniorSwimmer());
+        Collections.sort(team.getJuniorSwimmer());
 
-    public void resultJunior(Team teams){
-        Scanner in = new Scanner(System.in);
+        for (int i = 0, j = 1; i < team.getJuniorSwimmer().size(); i++,j++) {
+            System.out.printf("%d#",j);
+            System.out.println(team.getJuniorSwimmer().get(i).getName());
+            System.out.println(team.getJuniorSwimmer().get(i).getTrainingTime() + " seconds");
+            if (i == 4)
+                break;
+        }
+        for (int i = 0, j = 1; i < team.getSeniorSwimmer().size(); i++,j++) {
+            System.out.printf("%d#",j);
+            System.out.println(team.getSeniorSwimmer().get(i).getName());
+            System.out.println(team.getSeniorSwimmer().get(i).getTrainingTime() + " seconds");
+            if (i == 4)
+                break;
+        }
+    }
+
+    /*public void resultJunior(Team teams){
+
         System.out.println("Name of swimmer: ");
         String name = in.nextLine();
         System.out.println("Time ");
@@ -50,8 +86,9 @@ public class Coach {
     void showTrainingResult(){
         System.out.println("Test");
     }
-public void resultSenior(Team teams){
-        Scanner in = new Scanner(System.in);
+
+    /*
+    public void resultSenior(Team teams){
     System.out.println("Name of swimmer: ");
     String name = in.nextLine();
     System.out.println("Time: ");
@@ -62,5 +99,6 @@ public void resultSenior(Team teams){
             break;
         }
     }
-}
+
+     */
 }

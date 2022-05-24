@@ -1,16 +1,20 @@
 package Delfinen;
 
+import java.util.Random;
 import java.util.Scanner;
 
-public class CompetitiveMember extends Member {
+public class CompetitiveMember extends Member implements Comparable<CompetitiveMember> {
 
-    private double træningsResultat;
     private String swimmingDiscipline;
+    private int trainingTime;
+    Random random = new Random();
 
     //Constructor matching Super
     CompetitiveMember(String name, int age, String swimmingDiscipline) {
         super(name, age);
         this.swimmingDiscipline = swimmingDiscipline;
+        this.trainingTime = random.nextInt(100)+50;
+
     }
     public void swimmingDiscipline(CompetitiveMember competitiveMember){
         System.out.print("Svømmerens disciplin: ");
@@ -26,11 +30,16 @@ public class CompetitiveMember extends Member {
             competitiveMember.setSvømmeDiscipliner(Discipline.BREASTSTROKES);
         }
     }
+
+    public int getTrainingTime() {
+        return trainingTime;
+    }
+
+    public String getSwimmingDiscipline(){
+        return this.swimmingDiscipline;
+    }
     public void setSvømmeDiscipliner(Discipline swimmingDiscipline) {
         this.swimmingDiscipline = String.valueOf(swimmingDiscipline);
-    }
-    public void setTræningsResultat (double træningsResultat) {
-        this.træningsResultat = træningsResultat;
     }
 
     @Override
@@ -38,5 +47,16 @@ public class CompetitiveMember extends Member {
         return super.toString() + "\nMembership status: Active" +
                 "\nComp/Exer: Competitive\n" +
                 "\nDiscipline: " + swimmingDiscipline;
+    }
+
+    @Override
+    public int compareTo(CompetitiveMember other) {
+        if (this.trainingTime == other.getTrainingTime()){
+            return 0;
+        } else if (this.trainingTime > other.getTrainingTime()){
+            return 1;
+        } else {
+            return -1;
+        }
     }
 }

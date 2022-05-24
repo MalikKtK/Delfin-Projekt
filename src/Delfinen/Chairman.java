@@ -68,7 +68,7 @@ public class Chairman {
                    Enter swimming discipline
                    Butterfly
                    Crawl
-                   Backstrokes+
+                   Backstrokes
                    Breaststroke""");
 
 
