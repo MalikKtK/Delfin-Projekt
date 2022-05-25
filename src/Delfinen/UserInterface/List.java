@@ -1,4 +1,6 @@
-package Delfinen;
+package Delfinen.UserInterface;
+
+import Delfinen.Members.Member;
 
 import java.util.ArrayList;
 
@@ -14,8 +16,8 @@ public class List {
         return memberList;
     }
 
-    public static void removeMemberFromList(int i){
+    public static void removeMemberFromList(int i) {
         memberList.remove(i);
     }
 
-    }
+}

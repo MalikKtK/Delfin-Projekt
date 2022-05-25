@@ -1,4 +1,4 @@
-package Delfinen;
+package Delfinen.Members;
 
 import java.util.ArrayList;
 
@@ -15,14 +15,13 @@ public class Team {
         return seniorSwimmer;
     }
 
-    public void addMemberToTeam(CompetitiveMember member){
-        if (member.isJuniorSwimmer()){
+    public void addMemberToTeam(CompetitiveMember member) {
+        if (member.isJuniorSwimmer()) {
             juniorSwimmer.add(member);
         } else {
             seniorSwimmer.add(member);
         }
     }
-
 
     @Override
     public String toString() {

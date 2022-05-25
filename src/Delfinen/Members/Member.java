@@ -1,4 +1,4 @@
-package Delfinen;
+package Delfinen.Members;
 
 import java.util.Random;
 
@@ -15,7 +15,7 @@ public class Member {
     private final boolean inRestance;
 
 
-    Member(String name, int age){
+    public Member(String name, int age) {
         this.name = name;
         this.age = age;
         juniorOrSeniorSwimmer();
@@ -23,13 +23,13 @@ public class Member {
         inRestance = inRestance();
     }
 
-    public boolean inRestance(){
-        int randomNum = random.nextInt(4)+1;
+    public boolean inRestance() {
+        int randomNum = random.nextInt(4) + 1;
         return randomNum < 2;
     }
 
 
-    public boolean getRestance(){
+    public boolean getRestance() {
         return inRestance;
     }
 
@@ -37,12 +37,12 @@ public class Member {
         return name;
     }
 
-    public int getAge(){
+    public int getAge() {
         return age;
     }
 
-    public void juniorOrSeniorSwimmer(){
-        if (this.age < 18){
+    public void juniorOrSeniorSwimmer() {
+        if (this.age < 18) {
             this.juniorSwimmer = true;
             this.seniorSwimmer = false;
             this.elderlySwimmer = false;
@@ -56,7 +56,8 @@ public class Member {
             this.elderlySwimmer = false;
         }
     }
-    public boolean isJuniorSwimmer(){
+
+    public boolean isJuniorSwimmer() {
         return juniorSwimmer;
     }
 
@@ -64,18 +65,18 @@ public class Member {
         return seniorSwimmer;
     }
 
-    public boolean isElderlySwimmer(){
+    public boolean isElderlySwimmer() {
         return elderlySwimmer;
     }
 
-    public int calculateFee(){
-        if (juniorSwimmer){
+    public int calculateFee() {
+        if (juniorSwimmer) {
             return 1000;
-        } else if (seniorSwimmer){
+        } else if (seniorSwimmer) {
             return 1600;
-        } else if (elderlySwimmer){
+        } else if (elderlySwimmer) {
             return 1200;
-        }else {
+        } else {
             return 500;
         }
     }
@@ -89,13 +90,14 @@ public class Member {
         String MemberType = "";
         if (getAge() < 18) {
             MemberType = "Junior Member";
-        } if (getAge() >= 18) {
+        }
+        if (getAge() >= 18) {
             MemberType = "Senior Member";
         }
         return "-----------------------\n" +
                 "\nName: " + getName() +
                 "\nAge: " + getAge() +
-                "\nMembertype: " + MemberType +
+                "\nMember type: " + MemberType +
                 "\n-----------------------\n";
     }
 }

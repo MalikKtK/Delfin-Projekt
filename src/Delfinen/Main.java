@@ -1,5 +1,7 @@
 package Delfinen;
 
+import Delfinen.Controller.Delfinen;
+
 import java.io.FileNotFoundException;
 
 public class Main {
@@ -10,7 +12,6 @@ public class Main {
         new Main().swimmingClub.go();
 
     }
-
 
 
 }
