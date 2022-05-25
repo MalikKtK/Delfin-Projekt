@@ -1,17 +1,18 @@
 package Delfinen.Controller;
 
+import Delfinen.UserInterface.ConsoleColers;
 import Delfinen.UserInterface.List;
 
 import java.util.ArrayList;
 
 public class Cashier {
-
+ConsoleColers color = new ConsoleColers();
     public void totalSubscriptionFees() {
         int totalIncome = 0;
         for (int i = 0; i < List.getMemberList().size(); i++) {
             totalIncome += List.getMemberList().get(i).getFee();
         }
-        System.out.printf("Total expected annual subscription fees: DDK %d\n", totalIncome);
+        System.out.printf(color.BLUE_BOLD_BRIGHT + "Total expected annual subscription fees: DDK %d\n" + color.RESET, totalIncome);
     }
 
     public void getMembersInRestance() {
@@ -24,11 +25,11 @@ public class Cashier {
             }
         }
         if (name == null) {
-            System.out.println("All members has paid for their subscription!");
+            System.out.println(color.BLUE_BOLD_BRIGHT + "All members has paid for their subscription!" + color.RESET);
         } else {
-            System.out.println("List of members in restance: ");
+            System.out.println(color.BLUE_BOLD_BRIGHT + "List of members in restance: " + color.RESET);
             for (String s : names) {
-                System.out.println(s);
+                System.out.println(color.BLUE_BOLD_BRIGHT + s);
             }
         }
     }

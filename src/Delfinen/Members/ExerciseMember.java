@@ -8,7 +8,7 @@ public class ExerciseMember extends Member {
 
     @Override
     public String toString() {
-        return super.toString() + "\nMembership Status: Active" +
-                "\nComp/Exer: Exercise\n";
+        return super.toString() + color.BLUE_BOLD_BRIGHT + "\nMembership Status: " + color.RED + "Active " +
+                color.BLUE_BOLD_BRIGHT + "\nComp/Exer: " + color.RED + "Exercise\n ";
     }
 }

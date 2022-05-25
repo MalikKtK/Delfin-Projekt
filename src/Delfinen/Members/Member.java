@@ -1,10 +1,13 @@
 package Delfinen.Members;
 
+import Delfinen.UserInterface.ConsoleColers;
+
 import java.util.Random;
 
 public class Member {
 
     Random random = new Random();
+    ConsoleColers color = new ConsoleColers();
 
     private final String name;
     private final int age;
@@ -89,15 +92,15 @@ public class Member {
     public String toString() {
         String MemberType = "";
         if (getAge() < 18) {
-            MemberType = "Junior Member";
+            MemberType = color.BLUE_BOLD_BRIGHT + "Junior Member" + color.RESET;
         }
         if (getAge() >= 18) {
-            MemberType = "Senior Member";
+            MemberType = color.BLUE_BOLD_BRIGHT + "Senior Member" + color.RESET;
         }
         return "-----------------------\n" +
-                "\nName: " + getName() +
-                "\nAge: " + getAge() +
-                "\nMember type: " + MemberType +
+                color.BLUE_BOLD_BRIGHT + "\nName: " + color.RED + getName() +
+                color.BLUE_BOLD_BRIGHT + "\nAge: " + color.RED + getAge() +
+                color.BLUE_BOLD_BRIGHT + "\nMember type: " + color.RED + MemberType +
                 "\n-----------------------\n";
     }
 }

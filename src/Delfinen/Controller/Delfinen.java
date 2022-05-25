@@ -30,8 +30,7 @@ public class Delfinen {
                 case 5 -> cashier.totalSubscriptionFees();
                 case 6 -> cashier.getMembersInRestance();
                 case 7 -> coach.displayTopFive();
-                case 8 -> coach.showTrainingResult();
-                case 9 -> {
+                case 8 -> {
                     ui.exitMessage();
                     keepGoing = false;
                 }

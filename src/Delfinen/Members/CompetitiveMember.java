@@ -26,9 +26,9 @@ public class CompetitiveMember extends Member implements Comparable<CompetitiveM
 
     @Override
     public String toString() {
-        return super.toString() + "\nMembership status: Active" +
-                "\nComp/Exer: Competitive\n" +
-                "\nDiscipline: " + swimmingDiscipline;
+        return super.toString() + color.BLUE_BOLD_BRIGHT + "\nMembership status: " + color.RED +  "Active" +
+                color.BLUE_BOLD_BRIGHT + "\nComp/Exer: " + color.RED + "Competitive\n " +
+                color.BLUE_BOLD_BRIGHT + "\nDiscipline: " + color.RED + swimmingDiscipline + color.RESET;
     }
 
     @Override

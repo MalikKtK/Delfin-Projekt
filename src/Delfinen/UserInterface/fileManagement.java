@@ -7,16 +7,17 @@ import java.util.Scanner;
 
 public class fileManagement {
     final File allMembers = new File("members.txt");
+    ConsoleColers color = new ConsoleColers();
 
     public void fileOutput(Member member) {
 
         try {
             PrintStream output = new PrintStream(new FileOutputStream(allMembers, true));
             output.append(member.toString());
-            System.out.println("Members are now saved in a save-file.");
+            System.out.println(color.GREEN + "Members are now saved in a save-file." + color.RESET);
 
         } catch (IOException e) {
-            System.out.println("Error");
+            System.out.println(color.RED + "Error" + color.RESET);
             e.printStackTrace();
 
         }
