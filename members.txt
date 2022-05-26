@@ -1,0 +1,101 @@
+-----------------------
+
+Name: jesper
+Age: 19
+Membertype: Senior Member
+-----------------------
+
+Membership status: Active
+Comp/Exer: Competitive
+
+Discipline: crawl-----------------------
+
+Name: louise
+Age: 19
+Membertype: Senior Member
+-----------------------
+
+Membership status: Active
+Comp/Exer: Competitive
+
+Discipline: butterfly-----------------------
+
+Name: louise
+Age: 19
+Membertype: Senior Member
+-----------------------
+
+Membership status: Active
+Comp/Exer: Competitive
+
+Discipline: butterfly-----------------------
+
+Name: abubakir
+Age: 29
+Member type: Senior Member
+-----------------------
+
+Membership status: Active
+Comp/Exer: Competitive
+
+Discipline: crawl-----------------------
+
+Name: asdasdasdasd
+Age: 26
+Member type: Senior Member
+-----------------------
+
+Membership status: Active
+Comp/Exer: Competitive
+
+Discipline: crawl-----------------------
+
+Name: qdqwdqwdqwd
+Age: 19
+Member type: Senior Member
+-----------------------
+
+Membership status: Active
+Comp/Exer: Competitive
+
+Discipline: crawl-----------------------
+[1;94m
+Name: [0;31mmalik[1;94m
+Age: [0;31m22[1;94m
+Member type: [0;31m[1;94mSenior Member[0m
+-----------------------
+[1;94m
+Membership status: [0;31mActive[1;94m
+Comp/Exer: [0;31mCompetitive
+[1;94m
+Discipline: [0;31mcrawl[0m-----------------------
+[1;94m
+Name: [0;31mmark[1;94m
+Age: [0;31m23[1;94m
+Member type: [0;31m[1;94mSenior Member[0m
+-----------------------
+[1;94m
+Membership status: [0;31mActive[1;94m
+Comp/Exer: [0;31mCompetitive
+ [1;94m
+Discipline: [0;31mcrawl[0m-----------------------
+[1;94m
+Name: [0;31mmalik[1;94m
+Age: [0;31m22[1;94m
+Member type: [0;31m[1;94mSenior Member[0m
+-----------------------
+[1;94m
+Membership status: [0;31mActive[1;94m
+Comp/Exer: [0;31mCompetitive
+ [1;94m
+Discipline: [0;31mcrawl[0m-----------------------
+[1;94m
+Name: [0;31mmalik[1;94m
+Age: [0;31m22[1;94m
+Member type: [0;31m[1;94mSenior Member[0m
+-----------------------
+[1;94m
+Membership status: [0;31mActive[1;94m
+Comp/Exer: [0;31mCompetitive
+ [1;94m
+Discipline: [0;31mcrawl[0m
