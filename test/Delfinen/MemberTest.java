@@ -1,6 +1,7 @@
 package Delfinen;
 
 import Delfinen.Members.Member;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 
